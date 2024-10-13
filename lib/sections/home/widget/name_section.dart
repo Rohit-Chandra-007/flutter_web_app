@@ -24,7 +24,7 @@ class NameSection extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           'Rohit \nChandra',
-          style: Theme.of(context).textTheme.headlineLarge,
+          style: Theme.of(context).textTheme.displayLarge,
         ),
         const SizedBox(height: 8),
         Text(

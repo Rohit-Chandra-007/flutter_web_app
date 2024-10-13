@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_app/constant/app_icons.dart';
-import 'package:flutter_web_app/sections/about_me/experience_card.dart';
-import 'package:flutter_web_app/sections/about_me/skill_tag.dart';
+import 'package:flutter_web_app/sections/home/widget/experience_card.dart';
+import 'package:flutter_web_app/sections/home/widget/skill_tag.dart';
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});
