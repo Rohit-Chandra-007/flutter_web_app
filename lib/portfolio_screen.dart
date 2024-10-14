@@ -3,6 +3,8 @@ import 'package:flutter_web_app/sections/about_me/about_me_section.dart';
 import 'package:flutter_web_app/sections/home/widget/experience_section.dart';
 import 'package:flutter_web_app/sections/header/header.dart';
 import 'package:flutter_web_app/sections/home/home.dart';
+import 'package:flutter_web_app/sections/portfolio/portfolio_section.dart';
+import 'package:flutter_web_app/sections/skills_experience/skills_experience.dart';
 
 class PortfolioScreen extends StatelessWidget {
   const PortfolioScreen({super.key});
@@ -35,6 +37,8 @@ class PortfolioScreen extends StatelessWidget {
                 color: Theme.of(context).colorScheme.primaryContainer,
               ),
               const ProfileScreen(),
+              const PortfolioSection(),
+              const SkillsScreen()
             ],
           ),
         ),

@@ -8,7 +8,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
       alignment: Alignment.center,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
               clipBehavior: Clip.hardEdge,
               children: [
                 Container(
-                  width: 220,
+                  width: 200,
                   height: 240,
                   clipBehavior: Clip.hardEdge,
                   decoration: const BoxDecoration(
@@ -90,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                     SizedBox(height: 8),
                     BioTextWidget(
                       bioText:
-                          "🚀 Trying to be a little better than yesterday every day.",
+                          " 🚀 Trying to be a little better than yesterday every day.",
                     ),
                   ],
                 ),
