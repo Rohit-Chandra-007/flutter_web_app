@@ -16,9 +16,13 @@ class NameSection extends StatelessWidget {
             color: Theme.of(context).colorScheme.primaryContainer,
             borderRadius: BorderRadius.circular(16),
           ),
-          child: Text(
-            '👋 Greetings!',
-            style: Theme.of(context).textTheme.labelMedium,
+          child: Row(
+            children: [
+              Text(
+                '👋 Greetings!',
+                style: Theme.of(context).textTheme.labelMedium,
+              ),
+            ],
           ),
         ),
         const SizedBox(height: 8),
@@ -28,7 +32,7 @@ class NameSection extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          'Front-end developer · UI designer',
+          'Front-end developer · Flutter Developer',
           style: Theme.of(context).textTheme.bodyMedium,
         ),
         const SizedBox(height: 24),
@@ -57,7 +61,7 @@ class NameSection extends StatelessWidget {
             const SizedBox(width: 16),
             IconButton(
               icon: FaIcon(
-                FontAwesomeIcons.behance,
+                FontAwesomeIcons.instagram,
                 color: Theme.of(context).colorScheme.onSurface,
               ),
               onPressed: () {

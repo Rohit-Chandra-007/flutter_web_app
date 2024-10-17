@@ -13,6 +13,7 @@ class AppTheme {
     colorScheme: ColorScheme.dark(
       surface: AppColors.surfaceColor,
       primary: AppColors.primary,
+      onPrimary: AppColors.onPrimary,
       primaryContainer: AppColors.primaryContainer,
       onPrimaryContainer: AppColors.onPrimaryContainer,
       onSurface: AppColors.onSurfaceTextColor,

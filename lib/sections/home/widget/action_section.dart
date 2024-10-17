@@ -14,7 +14,7 @@ class ActionSection extends StatelessWidget {
           },
           child: Text(
             'Download CV \u2B07',
-            style: Theme.of(context).textTheme.labelSmall,
+            style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
         const SizedBox(height: 16),
@@ -24,13 +24,12 @@ class ActionSection extends StatelessWidget {
           },
           icon: FaIcon(
             FontAwesomeIcons.whatsapp,
-            color: Theme.of(context).colorScheme.onPrimaryContainer,
+            color: Theme.of(context).colorScheme.onPrimary,
           ),
-          label: Text('''Let's talk''',
-              style: Theme.of(context).textTheme.labelSmall),
+          label: Text('''Let's chat''',
+              style: Theme.of(context).textTheme.titleMedium),
           style: OutlinedButton.styleFrom(
-            side: BorderSide(
-                color: Theme.of(context).colorScheme.onPrimaryContainer),
+            side: BorderSide(color: Theme.of(context).colorScheme.onPrimary),
             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),

@@ -22,4 +22,8 @@ class AppIcons {
   static const String postman = '${basePath}postman.svg';
   static const String react = '${basePath}react.svg';
   static const String sqlite = '${basePath}sqlite.svg';
+  static const String forwardArrow = '${basePath}forward_arrow.svg';
+  static const String backwardArrow = '${basePath}back_arrow.svg';
+  static const String sendEmail = '${basePath}send.svg';
+  static const String copyIcon = '${basePath}copyed.svg';
 }

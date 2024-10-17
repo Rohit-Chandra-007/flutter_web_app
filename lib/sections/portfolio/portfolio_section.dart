@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
 import 'package:flutter_web_app/constant/app_icons.dart';
 import 'package:flutter_web_app/constant/app_images.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PortfolioSection extends StatelessWidget {
   const PortfolioSection({super.key});
@@ -19,37 +18,9 @@ class PortfolioSection extends StatelessWidget {
           const SizedBox(height: 40),
           const LabelChip(title: "🔗 Portfolio"),
           const SizedBox(height: 24),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Work and Projects',
-                style: Theme.of(context).textTheme.displayMedium,
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  CategoryChip(
-                    label: 'UI Design',
-                    iconPath: AppIcons.codeIcon,
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  CategoryChip(
-                    label: 'Design',
-                    iconPath: AppIcons.designIcon,
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  CategoryChip(
-                    label: 'UI Design',
-                    iconPath: AppIcons.projectIcon,
-                  ),
-                ],
-              ),
-            ],
+          Text(
+            'Work and Projects',
+            style: Theme.of(context).textTheme.displayMedium,
           ),
           const SizedBox(height: 80),
           GridView.builder(
@@ -73,8 +44,8 @@ class PortfolioSection extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 child: Text(
-                  'Ver mais projetos na Behance →',
-                  style: Theme.of(context).textTheme.labelMedium,
+                  'View More my Github Project →',
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
             ],
@@ -100,7 +71,7 @@ class CategoryChip extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-            color: Theme.of(context).colorScheme.onPrimaryContainer, width: 1),
+            color: Theme.of(context).colorScheme.onPrimary, width: 1),
       ),
       width: 190,
       child: Row(
@@ -114,7 +85,7 @@ class CategoryChip extends StatelessWidget {
           const SizedBox(width: 6),
           Text(
             label,
-            style: Theme.of(context).textTheme.labelMedium,
+            style: Theme.of(context).textTheme.titleMedium,
           ),
         ],
       ),
@@ -131,7 +102,7 @@ class ProjectCard extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-            color: Theme.of(context).colorScheme.onPrimaryContainer, width: 1),
+            color: Theme.of(context).colorScheme.onPrimary, width: 1),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -140,7 +111,7 @@ class ProjectCard extends StatelessWidget {
           children: [
             Text(
               'Move.it',
-              style: Theme.of(context).textTheme.titleMedium,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
             Text(

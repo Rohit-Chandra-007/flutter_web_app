@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_web_app/constant/app_colors.dart';
+import 'package:flutter_web_app/constant/app_icons.dart';
 
 class ExperienceCard extends StatelessWidget {
   const ExperienceCard(
@@ -18,19 +19,28 @@ class ExperienceCard extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       height: 200,
       decoration: BoxDecoration(
+        color: title == "Work" ? AppColors.primary : null,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-            color: Theme.of(context).colorScheme.onPrimaryContainer, width: 1),
+        border: title == "Work"
+            ? null
+            : Border.all(
+                color: Theme.of(context).colorScheme.onPrimary, width: 1),
       ),
       width: 250,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset(
-            iconPath,
-            height: 72,
-            width: 72,
-          ),
+          iconPath == AppIcons.github
+              ? SvgPicture.asset(
+                  iconPath,
+                  height: 64,
+                  width: 64,
+                )
+              : SvgPicture.asset(
+                  iconPath,
+                  height: 72,
+                  width: 72,
+                ),
           const SizedBox(height: 8),
           Text(
             years,

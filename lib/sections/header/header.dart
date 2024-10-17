@@ -50,8 +50,8 @@ Widget _buildNavItem(String title, BuildContext context) {
       style: title != "Home"
           ? Theme.of(context).textTheme.bodyMedium
           : Theme.of(context).textTheme.bodyMedium!.copyWith(
-                color: AppColors.onPrimaryContainer,
-                fontWeight: FontWeight.w900,
+                color: AppColors.onPrimary,
+                fontWeight: FontWeight.w700,
               ),
     ),
   );
