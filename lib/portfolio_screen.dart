@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_app/common/responsive_widget.dart';
+
 import 'package:flutter_web_app/sections/about_me/about_me_section.dart';
 import 'package:flutter_web_app/sections/career/career_section.dart';
 import 'package:flutter_web_app/sections/contact/contact.dart';
@@ -22,32 +24,34 @@ class PortfolioScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
+              SizedBox(
                 height: 20,
               ),
               const Header(),
-              const SizedBox(
+              SizedBox(
                 height: 15,
               ),
               const HomeSection(),
-              Container(
-                width: double.infinity,
-                height: 2,
-                color: Theme.of(context).colorScheme.primaryContainer,
-              ),
-              const ExperienceSection(),
-              Container(
-                width: double.infinity,
-                height: 2,
-                color: Theme.of(context).colorScheme.primaryContainer,
-              ),
-              const ProfileScreen(),
-              const PortfolioSection(),
-              const SkillsScreen(),
-              const CareerScreen(),
-              const RecommendationSection(),
-              const ContactSection(),
-              const FooterSection()
+              if (!ResponsiveWidget.isMobile(context))
+                Container(
+                  width: double.infinity,
+                  height: 2,
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+               const ExperienceSection(),
+              if (!ResponsiveWidget.isMobile(context))
+                Container(
+                  width: double.infinity,
+                  height: 2,
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+               const ProfileScreen(),
+               const PortfolioSection(),
+               const SkillsScreen(),
+              // const CareerScreen(),
+              // const RecommendationSection(),
+              // const ContactSection(),
+              // const FooterSection()
             ],
           ),
         ),

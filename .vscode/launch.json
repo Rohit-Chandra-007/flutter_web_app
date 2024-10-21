@@ -21,6 +21,12 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
+        },
+        {
+            "name": "flutter_web_app (Flutter sdk gphone64 x86 64)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
         }
     ]
 }

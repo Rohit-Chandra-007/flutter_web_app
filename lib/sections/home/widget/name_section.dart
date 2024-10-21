@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_web_app/common/responsive_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NameSection extends StatelessWidget {
@@ -9,34 +11,35 @@ class NameSection extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
       children: [
         Container(
-          padding: const EdgeInsets.all(12),
+          width: ResponsiveWidget.isMobile(context)?125:null,
+          padding:  EdgeInsets.all(12),
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.primaryContainer,
             borderRadius: BorderRadius.circular(16),
           ),
-          child: Row(
-            children: [
-              Text(
-                '👋 Greetings!',
-                style: Theme.of(context).textTheme.labelMedium,
-              ),
-            ],
+          child: Center(
+            child: Text(
+              '👋 Greetings!',
+              style: Theme.of(context).textTheme.labelMedium,
+
+            ),
           ),
         ),
-        const SizedBox(height: 8),
+         SizedBox(height: 8),
         Text(
           'Rohit \nChandra',
           style: Theme.of(context).textTheme.displayLarge,
         ),
-        const SizedBox(height: 8),
+         SizedBox(height: 8),
         Text(
           'Front-end developer · Flutter Developer',
           style: Theme.of(context).textTheme.bodyMedium,
         ),
-        const SizedBox(height: 24),
-        Row(
+         SizedBox(height: 24),
+        if(!ResponsiveWidget.isMobile(context)) Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             IconButton(
@@ -48,7 +51,7 @@ class NameSection extends StatelessWidget {
                 // Add LinkedIn URL here
               },
             ),
-            const SizedBox(width: 16),
+             SizedBox(width: 16),
             IconButton(
               icon: FaIcon(
                 FontAwesomeIcons.github,
@@ -58,7 +61,7 @@ class NameSection extends StatelessWidget {
                 // Add GitHub URL here
               },
             ),
-            const SizedBox(width: 16),
+             SizedBox(width: 16),
             IconButton(
               icon: FaIcon(
                 FontAwesomeIcons.instagram,

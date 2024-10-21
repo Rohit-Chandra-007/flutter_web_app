@@ -26,29 +26,29 @@ class AppTextTheme {
       fontSize: 52,
       fontWeight: FontWeight.w800,
     ),
-    displayMedium: GoogleFonts.ptSans(
+    displayMedium: GoogleFonts.raleway(
       color: AppColors.textColor,
       fontSize: 48,
       fontWeight: FontWeight.w800,
     ),
-    displaySmall: GoogleFonts.ptSans(
+    displaySmall: GoogleFonts.raleway(
       color: AppColors.textColor,
       fontSize: 32,
       fontWeight: FontWeight.w800,
     ),
     headlineLarge: GoogleFonts.raleway(
       color: AppColors.textColor,
-      fontSize: 52,
+      fontSize: 48,
       fontWeight: FontWeight.w800,
     ),
     headlineMedium: GoogleFonts.raleway(
       color: AppColors.textColor,
-      fontSize: 48,
+      fontSize: 32,
       fontWeight: FontWeight.w800,
     ),
     headlineSmall: GoogleFonts.raleway(
       color: AppColors.textColor,
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: FontWeight.w800,
     ),
     labelLarge: GoogleFonts.raleway(
@@ -65,10 +65,16 @@ class AppTextTheme {
       fontWeight: FontWeight.w700,
     ),
     titleLarge: GoogleFonts.raleway(
-        color: AppColors.textColor, fontSize: 20, fontWeight: FontWeight.w700),
+        color: AppColors.textColor,
+        fontSize: 20,
+        fontWeight: FontWeight.w700),
     titleMedium: GoogleFonts.raleway(
-        color: AppColors.onPrimary, fontSize: 20, fontWeight: FontWeight.w600),
+        color: AppColors.onPrimary,
+        fontSize: 20,
+        fontWeight: FontWeight.w600),
     titleSmall: GoogleFonts.raleway(
-        color: AppColors.textColor, fontSize: 18, fontWeight: FontWeight.w700),
+        color: AppColors.textColor,
+        fontSize: 18,
+        fontWeight: FontWeight.w700),
   );
 }
