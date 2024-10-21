@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.appTheme,
+      theme: AppTheme.appTheme(context),
       builder: (context, child) {
         return const PortfolioScreen();
       },

@@ -11,34 +11,32 @@ class MobileSkillsWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 40),
+          const SizedBox(height: 20),
           const LabelChip(
             title: '👨‍💻 Skills . Experiences',
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 12),
           Text(
             'Technologies and Skills',
             style: Theme.of(context).textTheme.headlineSmall,
           ),
-          const SizedBox(height: 60),
+          const SizedBox(height: 24),
           Text(
             'Techs that I use every day',
-            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                  fontSize: 24,
-                ),
+            style: Theme.of(context).textTheme.bodySmall,
           ),
-          const SizedBox(height: 48),
+          const SizedBox(height: 24),
           SizedBox(
-            height: 200,
+            height: 64,
+            width: double.infinity,
             child: ListView(
               physics: const BouncingScrollPhysics(
                 decelerationRate: ScrollDecelerationRate.fast,
               ),
               scrollDirection: Axis.horizontal,
-              shrinkWrap: true,
               children: const [
                 TechIcon(asset: AppIcons.flutter),
                 TechIcon(asset: AppIcons.dart),
@@ -52,22 +50,19 @@ class MobileSkillsWidget extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 48),
+          const SizedBox(height: 24),
           Text(
             'Other techs with which I have carried out projects',
-            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                  fontSize: 24,
-                ),
+            style: Theme.of(context).textTheme.bodySmall,
           ),
-          const SizedBox(height: 48),
+          const SizedBox(height: 24),
           SizedBox(
-            height: 200,
+            height: 64,
             child: ListView(
               physics: const BouncingScrollPhysics(
                 decelerationRate: ScrollDecelerationRate.fast,
               ),
               scrollDirection: Axis.horizontal,
-              shrinkWrap: true,
               children: const [
                 TechIcon(asset: AppIcons.html),
                 TechIcon(asset: AppIcons.css),
@@ -93,11 +88,11 @@ class TechIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 12),
+      margin: const EdgeInsets.only(right: 12),
       child: SvgPicture.asset(
         asset,
-        width: 64,
-        height: 64,
+        width: 56,
+        height: 56,
       ),
     );
   }

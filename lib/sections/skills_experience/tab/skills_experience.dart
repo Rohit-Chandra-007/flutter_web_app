@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
 import 'package:flutter_web_app/constant/app_icons.dart';
 
-class SkillsScreen extends StatelessWidget {
-  const SkillsScreen({super.key});
+class TabSkillsSection extends StatelessWidget {
+  const TabSkillsSection({super.key});
 
   @override
   Widget build(BuildContext context) {

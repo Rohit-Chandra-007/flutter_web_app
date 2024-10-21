@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   AppTheme._();
 
-  static ThemeData appTheme = ThemeData(
+  static ThemeData appTheme(BuildContext context)=> ThemeData(
     useMaterial3: true,
     // fontFamily: GoogleFonts.ptSans.toString(),
     brightness: Brightness.dark,
@@ -19,6 +19,6 @@ class AppTheme {
       onSurface: AppColors.onSurfaceTextColor,
     ),
     fontFamily: GoogleFonts.raleway().fontFamily,
-    textTheme: AppTextTheme.appTextTheme,
+    textTheme: AppTextTheme.appTextTheme(context),
   );
 }
