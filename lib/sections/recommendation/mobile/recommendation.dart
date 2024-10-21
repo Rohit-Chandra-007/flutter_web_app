@@ -22,53 +22,13 @@ class MobileRecommendationSection extends StatelessWidget {
             title: '💬 Recommendations',
           ),
           const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.baseline,
-            textBaseline: TextBaseline.ideographic,
-            children: [
-              Text(
-                'In testimony',
-                style: Theme.of(context).textTheme.headlineSmall,
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1),
-                    ),
-                    child: Center(
-                      child: SvgPicture.asset(AppIcons.backwardArrow),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1),
-                    ),
-                    child: Center(
-                      child: SvgPicture.asset(AppIcons.backwardArrow),
-                    ),
-                  ),
-                ],
-              ),
-            ],
+          Text(
+            'In testimony',
+            style: Theme.of(context).textTheme.headlineSmall,
           ),
           const SizedBox(height: 32),
           SizedBox(
-            height: 300,
+            height: 220,
             child: ListView(
               physics: const BouncingScrollPhysics(
                   decelerationRate: ScrollDecelerationRate.fast),

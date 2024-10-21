@@ -49,9 +49,9 @@ class PortfolioScreen extends StatelessWidget {
               const PortfolioSection(),
               const SkillsScreen(),
               const CareerScreen(),
-               const RecommendationSection(),
-              // const ContactSection(),
-              // const FooterSection()
+              const RecommendationSection(),
+              const ContactSection(),
+              const FooterSection()
             ],
           ),
         ),
