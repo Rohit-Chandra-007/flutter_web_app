@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_app/sections/home/widget/action_section.dart';
-import 'package:flutter_web_app/sections/home/widget/avatar_section.dart';
-import 'package:flutter_web_app/sections/home/widget/name_section.dart';
+import 'package:flutter_web_app/ui/home/widget/action_section.dart';
+import 'package:flutter_web_app/ui/home/widget/avatar_section.dart';
+import 'package:flutter_web_app/ui/home/widget/name_section.dart';
 
 class HomeWeb extends StatelessWidget {
   const HomeWeb({super.key});

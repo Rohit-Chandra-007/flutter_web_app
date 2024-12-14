@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_app/common/responsive_widget.dart';
 
-import 'package:flutter_web_app/sections/about_me/about_me_section.dart';
-import 'package:flutter_web_app/sections/career/career_section.dart';
-import 'package:flutter_web_app/sections/contact/contact.dart';
-import 'package:flutter_web_app/sections/footer/footer.dart';
-import 'package:flutter_web_app/sections/home/widget/experience_section.dart';
-import 'package:flutter_web_app/sections/header/header.dart';
-import 'package:flutter_web_app/sections/home/home.dart';
-import 'package:flutter_web_app/sections/portfolio/portfolio_section.dart';
-import 'package:flutter_web_app/sections/recommendation/recommendation.dart';
-import 'package:flutter_web_app/sections/skills_experience/skills_experience.dart';
+import 'package:flutter_web_app/ui/about_me/about_me_section.dart';
+import 'package:flutter_web_app/ui/career/career_section.dart';
+import 'package:flutter_web_app/ui/contact/contact.dart';
+import 'package:flutter_web_app/ui/footer/footer.dart';
+import 'package:flutter_web_app/ui/home/widget/experience_section.dart';
+import 'package:flutter_web_app/ui/header/header.dart';
+import 'package:flutter_web_app/ui/home/home.dart';
+import 'package:flutter_web_app/ui/portfolio/portfolio_section.dart';
+import 'package:flutter_web_app/ui/recommendation/recommendation.dart';
+import 'package:flutter_web_app/ui/skills_experience/skills_experience.dart';
 
 class PortfolioScreen extends StatelessWidget {
   const PortfolioScreen({super.key});

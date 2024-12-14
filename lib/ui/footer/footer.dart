@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_app/common/responsive_widget.dart';
-import 'package:flutter_web_app/sections/footer/mobile/footer.dart';
-import 'package:flutter_web_app/sections/footer/tab/footer.dart';
-import 'package:flutter_web_app/sections/footer/web/footer.dart';
+import 'package:flutter_web_app/ui/footer/mobile/footer.dart';
+import 'package:flutter_web_app/ui/footer/tab/footer.dart';
+import 'package:flutter_web_app/ui/footer/web/footer.dart';
 
 
 class FooterSection extends StatelessWidget {

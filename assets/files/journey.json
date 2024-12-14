@@ -2,61 +2,51 @@
   "professionalExperiences": [
     {
       "title": "Mobile and Website Developer at MomentumIas",
-      "description": "Freelancing for MomentumIAS, a coaching institute for UPSC preparation, managing their mobile application and website. Providing support for day-to-day issues to ensure smooth operation and optimal user experience.",
-      "duration": "2 months",
+      "description": "Professionally managing MomentumIAS's website, a premier coaching institute for UPSC preparation. Providing comprehensive technical support and maintenance to ensure seamless operations and enhanced user experience across all platforms.",
+      "duration": "3 months",
       "dateRange": "Sept/2024 - Present"
     },
     {
       "title": "Jr. Flutter Developer at Hostbooks",
-      "description": "Contributed to the development of the HostBooks app, a solution that revolutionizes business management. Played a key role as a front-end developer, creating responsive applications for both desktop and mobile platforms. Leveraged GetX for state management and employed the MVC architecture to ensure a seamless user experience.",
-      "duration": "5 month",
+      "description": "Led frontend development for HostBooks business management application, implementing responsive solutions for desktop and mobile platforms. Utilized GetX state management and MVC architecture to deliver high-performance, scalable applications. Collaborated with cross-functional teams to ensure optimal user experience and maintainable codebase.",
+      "duration": "4 month",
       "dateRange": "Sept/2022 - Jan/2023"
     },
     {
       "title": "Flutter Intern at Oyelabs",
       "description": "Contributed to Oyelabs grocery application project, which featured an aesthetically appealing user interface designed in Figma. My role involved implementing RESTful APIs, integrated Firebase for backend functionality, and incorporated Google Maps for location-based services.",
-      "duration": "6 months",
+      "duration": "5 months",
       "dateRange": "Apirl/2022 - Sept/2022"
     }
     
   ],
   "academicExperiences": [
     {
-      "title": "Google IT Automation with Python Professional Certificate",
-      "description": "After three years of preparing for the UPSC alongside my professional work, I am now exploring new technologies by pursuing the 'Google IT Automation with Python Professional Certificate' course on Coursera.",
-      "duration": "8 month",
-      "dateRange": "Sept/2024 - Present"
-    },
-
-    {
-      "title": "Android Development Training",
-      "description": "After completing my second year of college, I used my summer vacation to learn new technologies and applied my Core Java skills in Android development. I also explored new tools to enhance my ability to build college projects, such as a Book Inventory Management application.",
-      "duration": "2 months",
-      "dateRange": "May/2019 - July/2019"
+      "institution": "National Institute of Technology",
+      "area": "Computer Science and Engineering",
+      "summary": "Graduated with a Bachelor's degree in Computer Science and Engineering",
+      "studyType": "Bachelor's",
+      "startDate": "2017",
+      "endDate": "2021",
+      "duration": "4 years"
     },
     {
-      "title": " Core Java Development Training",
-      "description": "After completing my first year of college, I utilized my summer vacation to learn new programming languages and deepen my understanding of object-oriented programming concepts in preparation for the upcoming semester.",
-      "duration": "2 months",
-      "dateRange": "May/2018 - July/2018"
+      "institution": "Kendriya Vidyalaya No. 1 Roorkee",
+      "area": "Science",
+      "summary": "Completed Higher Secondary Education with Science stream",
+      "studyType": "Higher Secondary",
+      "startDate": "2015",
+      "endDate": "2017",
+      "duration": "2 years"
     },
     {
-      "title": "Computer Sciecne and Engineering",
-      "description": ".",
-      "duration": "4 year",
-      "dateRange": "Aug/2017 - Aug/2021"
-    },
-    {
-      "title": "Completed Sr. Secondary School",
-      "description": "No segundo semestre de 2018 pude aprimorar meu nível de inglês (Nível Avançado) com a modalidade de conversação avançada pelo Instituto Federal do Jacareí (IFSP).",
-      "duration": "1 year",
-      "dateRange": "May/2016"
-    },
-    {
-      "title": "Completed High School",
-      "description": "Ao final de 2017 me formei no ensino médio na escola Antônia Dias Sampaio em Jacareí.",
-      "duration": "1 year",
-      "dateRange": "May/2013"
-    }
+      "institution": "London App Brewery",
+      "area": "Flutter Development Training",
+      "summary": "After completing my third year of college, I used my summer vacation to learn new technologies and applied my Knowledge in flutter development. I also explored new tools to enhance my ability to build college projects, such as a MarketPlace application.",
+      "studyType": "Training",
+      "startDate": "May/2020",
+      "endDate": "July/2020",
+      "duration": "2 months"
+    } 
   ]
 }

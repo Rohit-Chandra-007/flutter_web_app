@@ -5,7 +5,8 @@ import 'package:flutter_web_app/portfolio_screen.dart';
 import 'constant/app_theme.dart';
 
 void main() async {
-
+  WidgetsFlutterBinding.ensureInitialized();
+  
   runApp(const MyApp());
 }
 

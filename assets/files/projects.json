@@ -1,94 +1,89 @@
 {
   "projects": [
     {
-      "title": "Blog App",
-      "description": "Developed a production-level blogging application using Flutter, allowing users to write, read, and share blogs. Applied Clean Architecture best practices to enhance scalability and maintainability. Utilized Bloc for state management to effectively separate widgets from business logic. Integrated Supabase for authentication and server-side cloud storage, and implemented Hive for local data storage.",
-      "tags": [
+      "name": "UPSC Preparation App",
+      "description": "A mobile application to help UPSC aspirants prepare for the examination",
+      "highlights": [
+        "Integrated with Firebase for user authentication and data storage",
+        "Real-time chat feature for users to interact with each other",
+        "Daily current affairs updates and quizzes",
+        "Writing Blog Posts and sharing them with the community",
+        "Quiz section with timer and score calculation"
+      ],
+      "technologies": [
         "Flutter",
         "Dart",
         "Supabase",
-        "Bloc",
-        "GetIt"
+        "BLoc",
+        "Clean Architecture"
       ],
-      "image": "assets/moveit_image.png"
+      "url": "https://github.com/Rohit-Chandra-007/upsc_blog_app"
+    },
+
+    {
+      "name": "Workopia-Job Listing Website",
+      "description": "A job listing website for employers and job seekers to connect",
+      "highlights": [
+        "post job listings and apply for jobs",
+        "User authentication and authorization",
+        "Google Maps integration for job location",
+        "direct connection between employer and job seeker"
+      ],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "PostgresSql",
+        "Tailwind CSS",
+        "Alpine JS"
+      ],
+      "url": "https://github.com/Rohit-Chandra-007/workopia-laravel"
     },
     {
-      "title": "Your Place",
-      "description": "Developed a feature for creating and saving memories of favorite locations within a mobile application. Integrated Google Maps API to mark and manage favorite places. Used SQLite for efficient local data storage, enabling offline access to saved locations and memories directly on the device. The architecture was designed to ensure seamless performance and data integrity, offering users a smooth experience in tagging and revisiting their favorite spots.",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Google Map",
-        "Sqflite"
+      "name": "Personal Portfolio Website",
+      "description": "A personal portfolio website to showcase projects and skills",
+      "highlights": [
+        "Responsive design for mobile and desktop",
+        "Interactive elements and animations",
+        "Contact form with email notification",
+        "SEO optimization for search engine visibility"
       ],
-      "image": "assets/moveit_image.png"
+      "technologies": ["Flutter", "Dart", "Firebase", "GitHub Pages"],
+      "url": "https://rohit-chandra-007.github.io/"
     },
     {
-      "title": "Chit Chat App",
-      "description": "Chit Chat is a modern messaging application built with Flutter and Dart, offering a seamless chat experience. It leverages Firebase for real-time data synchronization and authentication, ensuring reliable and secure communication. The app uses Riverpod for efficient state management, providing clean and maintainable code architecture. With a user-friendly interface and robust functionality, Chit Chat delivers a fast, engaging, and interactive experience for users.",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "Riverpod"
+      "name": "Chit Chat App",
+      "description": "A real-time chat application for users to communicate with each other",
+      "highlights": [
+        "User registration and login",
+        "Real-time messaging with online status",
+        "Group chat functionality",
+        "Image and file sharing capabilities"
       ],
-      "image": "assets/moveit_image.png"
+      "technologies": ["Flutter", "Dart", "Firebase", "BLoc"],
+      "url": ""
     },
     {
-      "title": "Nat Geo App Clone",
-      "description": "Recreated the National Geographic experience through a Flutter-based mobile application. Developed using Flutter and Dart, this clone offers rich visual content, articles, and user engagement similar to the original Nat Geo app. The focus was on implementing a highly interactive UI that gives users an authentic browsing experience.",
-      "tags": [
-        "Flutter",
-        "Dart"
+      "name": "Expense Tracker App",
+      "description": "A mobile application to track and manage expenses",
+      "highlights": [
+        "Expense categorization and budget setting",
+        "Monthly and yearly expense reports",
+        "Data visualization with charts and graphs"
       ],
-      "image": "assets/moveit_image.png"
+      "technologies": ["Flutter", "Dart", "Sqlite", "Riverpod"],
+      "url": ""
     },
     {
-      "title": "Shopping App",
-      "description": "Built a fully functional e-commerce shopping application using Flutter and Dart. Leveraged Riverpod for efficient state management to maintain a clean architecture and ensure easy code maintenance. The app features product listing, a shopping cart, user authentication, and a smooth checkout process, providing users with a convenient shopping experience.",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Riverpod"
+      "name": "Your Location App",
+      "description": "Mark Your Location and Share with Friends",
+      "highlights": [
+        "Mark your location on map",
+        "Share your location with friends",
+        "Real-time location tracking",
+        "User authentication and authorization"
       ],
-      "image": "assets/moveit_image.png"
-    },
-    {
-      "title": "Expense Tracker",
-      "description": "Created a personal finance management application using Flutter and Dart. The app allows users to add, track, and categorize their expenses with a clean and intuitive interface. Developed features such as dynamic charts, spending summaries, and budget management, helping users understand and optimize their spending habits.",
-      "tags": [
-        "Flutter",
-        "Dart"
-      ],
-      "image": "assets/moveit_image.png"
-    },
-    {
-      "title": "Meals App",
-      "description": "Developed a recipe browsing application using Flutter and Dart. Users can explore a variety of meal options, search recipes by categories, filter based on preferences, and save favorite recipes for quick access. The app provides a smooth and visually appealing user experience for meal planning and cooking inspiration.",
-      "tags": [
-        "Flutter",
-        "Dart"
-      ],
-      "image": "assets/moveit_image.png"
-    },
-    {
-      "title": "Weather App",
-      "description": "Developed a weather forecasting application using Flutter and Dart. Integrated a REST API to fetch real-time weather data for any location. The app provides detailed weather information, including temperature, humidity, wind speed, and a 7-day forecast. It delivers an easy-to-use interface with visually appealing elements for a pleasant user experience.",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "RestAPI"
-      ],
-      "image": "assets/moveit_image.png"
-    },
-    {
-      "title": "Quiz App",
-      "description": "Developed an interactive quiz application using Flutter and Dart. The app offers a variety of quizzes on different topics, tracks user progress, and provides score summaries at the end of each session. Designed with an engaging user interface, this app is intended to make learning enjoyable and informative.",
-      "tags": [
-        "Flutter",
-        "Dart"
-      ],
-      "image": "assets/moveit_image.png"
+      "technologies": ["Flutter", "Dart", "Firebase"],
+      "url": ""
     }
   ]
 }
