@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_web_app/bloc/portfolio_bloc.dart';
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
 import 'package:flutter_web_app/constant/app_images.dart';
+import 'package:flutter_web_app/models/project_model.dart';
 
 class TabPortfolioSection extends StatelessWidget {
   const TabPortfolioSection({super.key});
@@ -22,18 +25,28 @@ class TabPortfolioSection extends StatelessWidget {
             style: Theme.of(context).textTheme.displayMedium,
           ),
           const SizedBox(height: 80),
-          GridView.builder(
-            shrinkWrap: true,
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              crossAxisSpacing: 16,
-              mainAxisSpacing: 16,
-              childAspectRatio: 0.75,
-            ),
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: 6,
-            itemBuilder: (context, index) {
-              return const ProjectCard();
+          BlocBuilder<PortfolioBloc, PortfolioState>(
+            builder: (context, state) {
+              if (state is PortfolioLoading) {
+                return const Center(child: CircularProgressIndicator());
+              } else if (state is PortfolioLoaded) {
+                return GridView.builder(
+                  shrinkWrap: true,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                    childAspectRatio: 0.75,
+                  ),
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: 6,
+                  itemBuilder: (context, index) {
+                    return ProjectCard(project: state.projects[index]);
+                  },
+                );
+              } else {
+                return const Center(child: Text('Failed to load projects'));
+              }
             },
           ),
           const SizedBox(height: 16),
@@ -93,7 +106,9 @@ class CategoryChip extends StatelessWidget {
 }
 
 class ProjectCard extends StatelessWidget {
-  const ProjectCard({super.key});
+  const ProjectCard({super.key, required this.project});
+
+  final Project project;
 
   @override
   Widget build(BuildContext context) {
@@ -109,12 +124,12 @@ class ProjectCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Move.it',
+              project.name,
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
             Text(
-              'Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.',
+              project.description,
               style: Theme.of(context).textTheme.bodySmall,
               maxLines: 3,
               overflow: TextOverflow.ellipsis,

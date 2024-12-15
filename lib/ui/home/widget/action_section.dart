@@ -22,7 +22,7 @@ class ActionSection extends StatelessWidget {
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 OutlinedButton.icon(
                   onPressed: () {
                     // Add WhatsApp contact functionality here
@@ -38,7 +38,7 @@ class ActionSection extends StatelessWidget {
                     side: BorderSide(
                         color: Theme.of(context).colorScheme.onPrimary),
                     padding:
-                        EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.0),
                     ),
@@ -56,7 +56,7 @@ class ActionSection extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               OutlinedButton.icon(
                 onPressed: () {
                   // Add WhatsApp contact functionality here
@@ -72,7 +72,7 @@ class ActionSection extends StatelessWidget {
                   side: BorderSide(
                       color: Theme.of(context).colorScheme.onPrimary),
                   padding:
-                      EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),

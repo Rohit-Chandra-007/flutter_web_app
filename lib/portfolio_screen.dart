@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_web_app/bloc/portfolio_bloc.dart';
 import 'package:flutter_web_app/common/responsive_widget.dart';
 
 import 'package:flutter_web_app/ui/about_me/about_me_section.dart';
@@ -12,8 +14,26 @@ import 'package:flutter_web_app/ui/portfolio/portfolio_section.dart';
 import 'package:flutter_web_app/ui/recommendation/recommendation.dart';
 import 'package:flutter_web_app/ui/skills_experience/skills_experience.dart';
 
-class PortfolioScreen extends StatelessWidget {
+import 'models/project_model.dart';
+
+class PortfolioScreen extends StatefulWidget {
   const PortfolioScreen({super.key});
+
+  @override
+  State<PortfolioScreen> createState() => _PortfolioScreenState();
+}
+
+class _PortfolioScreenState extends State<PortfolioScreen> {
+  List<Project> projects = [];
+  @override
+  initState() {
+    super.initState();
+    loadData();
+  }
+
+  void loadData() {
+    context.read<PortfolioBloc>().add(FetchPortfolioData());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +44,11 @@ class PortfolioScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               const Header(),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               const HomeSection(),

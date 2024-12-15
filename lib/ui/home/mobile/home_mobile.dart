@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_app/ui/home/mobile/widgets/action_widget.dart';
 import 'package:flutter_web_app/ui/home/mobile/widgets/avatar_section.dart';
 import 'package:flutter_web_app/ui/home/mobile/widgets/name_section.dart';
-import 'package:flutter_web_app/ui/home/widget/action_section.dart';
-import 'package:flutter_web_app/ui/home/widget/avatar_section.dart';
-import 'package:flutter_web_app/ui/home/widget/name_section.dart';
+
 
 class HomeMobile extends StatelessWidget {
   const HomeMobile({super.key});

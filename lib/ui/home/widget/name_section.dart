@@ -15,7 +15,7 @@ class NameSection extends StatelessWidget {
       children: [
         Container(
           width: ResponsiveWidget.isMobile(context)?125:null,
-          padding:  EdgeInsets.all(12),
+          padding:  const EdgeInsets.all(12),
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.primaryContainer,
             borderRadius: BorderRadius.circular(16),
@@ -28,17 +28,17 @@ class NameSection extends StatelessWidget {
             ),
           ),
         ),
-         SizedBox(height: 8),
+         const SizedBox(height: 8),
         Text(
           'Rohit \nChandra',
           style: Theme.of(context).textTheme.displayLarge,
         ),
-         SizedBox(height: 8),
+         const SizedBox(height: 8),
         Text(
           'Front-end developer · Flutter Developer',
           style: Theme.of(context).textTheme.bodyMedium,
         ),
-         SizedBox(height: 24),
+         const SizedBox(height: 24),
         if(!ResponsiveWidget.isMobile(context)) Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -51,7 +51,7 @@ class NameSection extends StatelessWidget {
                 // Add LinkedIn URL here
               },
             ),
-             SizedBox(width: 16),
+             const SizedBox(width: 16),
             IconButton(
               icon: FaIcon(
                 FontAwesomeIcons.github,
@@ -61,7 +61,7 @@ class NameSection extends StatelessWidget {
                 // Add GitHub URL here
               },
             ),
-             SizedBox(width: 16),
+             const SizedBox(width: 16),
             IconButton(
               icon: FaIcon(
                 FontAwesomeIcons.instagram,

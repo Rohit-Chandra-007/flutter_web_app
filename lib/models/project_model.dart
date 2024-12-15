@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+
 class Project {
   final String name;
   final String description;
@@ -76,5 +80,14 @@ class Project {
   String get shortDescription {
     if (description.length <= 100) return description;
     return '${description.substring(0, 97)}...';
+  }
+
+ 
+  // Add static loader method
+  static Future<List<Project>> loadProjects(BuildContext context) async {
+    final String jsonString = 
+        await DefaultAssetBundle.of(context).loadString('assets/projects.json');
+    final List<dynamic> jsonList = json.decode(jsonString);
+    return jsonList.map((json) => Project.fromJson(json)).toList();
   }
 }

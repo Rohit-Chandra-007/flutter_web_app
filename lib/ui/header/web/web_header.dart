@@ -10,8 +10,8 @@ class WebHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 8),
+      margin: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(12),
@@ -45,7 +45,7 @@ Widget _buildHeader(BuildContext context) {
 
 Widget _buildNavItem(String title, BuildContext context) {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 16.0),
+    padding: const EdgeInsets.symmetric(horizontal: 16.0),
     child: Text(
       title,
       style: title != "Home"

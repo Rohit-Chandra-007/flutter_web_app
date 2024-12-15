@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_web_app/common/responsive_layout.dart';
-import 'package:flutter_web_app/constant/app_colors.dart';
-import 'package:flutter_web_app/constant/app_icons.dart';
 import 'package:flutter_web_app/ui/header/mobile/mobile_header.dart';
 import 'package:flutter_web_app/ui/header/tablet/tab_header.dart';
 import 'package:flutter_web_app/ui/header/web/web_header.dart';

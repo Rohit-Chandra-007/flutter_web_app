@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:flutter_web_app/common/responsive_widget.dart';
-import 'package:flutter_web_app/common/widgets/label_chip.dart';
-import 'package:flutter_web_app/constant/app_icons.dart';
+
 import 'package:flutter_web_app/ui/skills_experience/mobile/skills_experience.dart';
 import 'package:flutter_web_app/ui/skills_experience/tab/skills_experience.dart';
 import 'package:flutter_web_app/ui/skills_experience/web/skills_experience.dart';
