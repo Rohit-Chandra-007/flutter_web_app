@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_web_app/bloc/portfolio_bloc.dart';
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
-import 'package:flutter_web_app/constant/app_colors.dart';
+import 'package:flutter_web_app/ui/career/common_widgets.dart';
 
 class TabCareerSection extends StatelessWidget {
   const TabCareerSection({super.key});
@@ -22,123 +24,39 @@ class TabCareerSection extends StatelessWidget {
             style: Theme.of(context).textTheme.displayMedium,
           ),
           const SizedBox(height: 32),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Expanded(
-                child: CareerWidget(),
-              ),
-              SizedBox(
-                width: 80,
-              ),
-              Expanded(
-                child: CareerWidget(),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class CareerCard extends StatelessWidget {
-  final String title;
-  final String description;
-  final String duration;
-  final String dateRange;
-
-  const CareerCard({
-    super.key,
-    required this.title,
-    required this.description,
-    required this.duration,
-    required this.dateRange,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-            color: Theme.of(context).colorScheme.onPrimary, width: 1),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            title,
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            description,
-            style: Theme.of(context).textTheme.bodySmall,
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                duration,
-                style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                      fontSize: 18,
+          BlocBuilder<PortfolioBloc, PortfolioState>(
+            builder: (context, state) {
+              if (state is PortfolioLoading) {
+                return const Center(child: CircularProgressIndicator());
+              } else if (state is PortfolioLoaded) {
+                return Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: CareerWidget(
+                        title: 'Professional Area',
+                        year: '2022',
+                        list: state.workExperience,
+                      ),
                     ),
-              ),
-              Text(
-                dateRange,
-                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                    fontSize: 18, color: AppColors.onPrimaryContainer),
-              ),
-            ],
+                    const SizedBox(width: 80),
+                    Expanded(
+                      child: CareerWidget(
+                        title: 'Academic Area',
+                        year: '2014',
+                        list: state.academicExperience,
+                      ),
+                    ),
+                  ],
+                );
+              } else {
+                return const Center(child: Text('Error'));
+              }
+            },
           ),
         ],
       ),
-    );
-  }
-}
-
-class CareerWidget extends StatelessWidget {
-  const CareerWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          'Professional Area',
-          style: Theme.of(context).textTheme.displaySmall,
-        ),
-        const SizedBox(height: 8),
-        Text(
-          '2022 · Present',
-          style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                fontSize: 24,
-              ),
-        ),
-        const Column(
-          children: [
-            CareerCard(
-              title: 'Desenvolvedor Front-end na Ensinio',
-              description:
-                  'Desenvolvimento de features na aplicação principal e site, com React Js e Typescript, além do auxílio de outras tecnologias como Next, Styled Components e padrões de arquitetura.',
-              duration: '1 ano e 7 meses',
-              dateRange: 'Abril/2021 · Atualmente',
-            ),
-            SizedBox(height: 16),
-            CareerCard(
-              title: 'Designer na Viralizzi',
-              description:
-                  'Disponibilizando serviços para mídias digitais na Viralizzi como Designer.',
-              duration: '3 meses',
-              dateRange: 'Janeiro/2021 · Abril/2021',
-            ),
-          ],
-        ),
-      ],
     );
   }
 }

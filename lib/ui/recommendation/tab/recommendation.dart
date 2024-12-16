@@ -59,7 +59,7 @@ class TabRecommendationSection extends StatelessWidget {
                           width: 1),
                     ),
                     child: Center(
-                      child: SvgPicture.asset(AppIcons.backwardArrow),
+                      child: SvgPicture.asset(AppIcons.forwardArrow),
                     ),
                   ),
                 ],
@@ -76,26 +76,26 @@ class TabRecommendationSection extends StatelessWidget {
               children: const [
                 TestimonyCard(
                   testimony:
-                      'Washington is always studying and learning, seeking to improve what he does. That is his best quality. He is always pursuing his goals with focus and organisation. Moreover, technically, in what he sets out to do, he does it well. Always!',
-                  name: 'Romário Lima',
-                  position: 'Computer Engineer',
-                  imageUrl: AppImages.profile,
+                      'Rohit demonstrates exceptional proficiency in Flutter development, consistently delivering robust and scalable solutions. His deep understanding of state management, custom widgets, and Flutter architecture patterns is impressive. He excels at creating clean, maintainable code and shows great attention to UI/UX details in every project.',
+                  name: 'Sabab Alam',
+                  position: 'Flutter Developer at Vector3 Digital Tech Pvt Ltd',
+                  imageUrl: AppImages.sabab,
                 ),
                 SizedBox(width: 16),
                 TestimonyCard(
                   testimony:
-                      'Washington is always studying and learning, seeking to improve what he does. That is his best quality. He is always pursuing his goals with focus and organisation. Moreover, technically, in what he sets out to do, he does it well. Always!',
-                  name: 'Romário Lima',
-                  position: 'Computer Engineer',
-                  imageUrl: AppImages.profile,
+                      'Rohit is an exceptional Flutter developer with a keen eye for detail and a deep understanding of mobile app development principles. His ability to architect complex solutions while maintaining clean, efficient code is remarkable. He consistently delivers high-quality work and demonstrates excellent problem-solving skills in challenging scenarios.',
+                  name: 'Shivendra mani Tripathi',
+                  position: 'Flutter Developer at Q3 Technologies',
+                  imageUrl: AppImages.shivendra,
                 ),
                 SizedBox(width: 16),
                 TestimonyCard(
                   testimony:
-                      'Washington is always studying and learning, seeking to improve what he does. That is his best quality. He is always pursuing his goals with focus and organisation. Moreover, technically, in what he sets out to do, he does it well. Always!',
-                  name: 'Romário Lima',
-                  position: 'Computer Engineer',
-                  imageUrl: AppImages.profile,
+                      '''Rohit is an outstanding Flutter developer who consistently delivers innovative solutions. His expertise in state management, particularly with Provider and Bloc patterns, is remarkable. He has a strong grasp of Flutter's widget system and demonstrates excellent coding practices. His ability to mentor team members while maintaining high productivity makes him an invaluable asset to any development team.''',
+                  name: 'Aashish Pal',
+                  position: 'Flutter Developer at HostBooks Pvt Ltd',
+                  imageUrl: AppImages.aashish,
                 ),
               ],
             ),

@@ -1,7 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter_web_app/models/project_model.dart';
+import 'package:flutter_web_app/models/journey_model.dart';
 import 'package:flutter_web_app/repository/portfolio_repository.dart';
 
 part 'portfolio_event.dart';
@@ -20,7 +22,15 @@ class PortfolioBloc extends Bloc<PortfolioEvent, PortfolioState> {
     try {
       emit(PortfolioLoading());
       final projects = await portfolioRepository.getProjects();
-      emit(PortfolioLoaded(projects: projects));
+      final workExperience =
+          await portfolioRepository.getProfessionalExperience();
+      final academicExperience =
+          await portfolioRepository.getAcademicExperience();
+
+      emit(PortfolioLoaded(
+          projects: projects,
+          workExperience: workExperience,
+          academicExperience: academicExperience));
     } catch (e) {
       emit(PortfolioError(message: e.toString()));
     }

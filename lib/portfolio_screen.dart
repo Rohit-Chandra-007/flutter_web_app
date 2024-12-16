@@ -51,7 +51,7 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
               const SizedBox(
                 height: 15,
               ),
-              const HomeSection(),
+               const HomeSection(),
               if (!ResponsiveWidget.isMobile(context))
                 Container(
                   width: double.infinity,

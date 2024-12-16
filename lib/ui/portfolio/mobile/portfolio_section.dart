@@ -11,8 +11,8 @@ class MobilePortfolioSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      //padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

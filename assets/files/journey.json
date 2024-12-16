@@ -22,31 +22,23 @@
   ],
   "academicExperiences": [
     {
-      "institution": "National Institute of Technology",
-      "area": "Computer Science and Engineering",
-      "summary": "Graduated with a Bachelor's degree in Computer Science and Engineering",
-      "studyType": "Bachelor's",
-      "startDate": "2017",
-      "endDate": "2021",
-      "duration": "4 years"
+      "title": "Training, London App Brewery",
+      "description": "After completing my third year of college, I used my summer vacation to learn new technologies and applied my Knowledge in flutter development. I also explored new tools to enhance my ability to build college projects, such as a MarketPlace application.",   
+      "duration": "2 months",
+      "dateRange":"May/2020 - July/2020"
+    } ,
+    {
+      "title": "Bachelor's, Computer Science and Engineering",
+      "description": "Graduated with a Bachelor's degree in Computer Science and Engineering from National Institute of Technology Uttarakhand",
+      "duration": "4 years",
+      "dateRange": "Aug/2017 - May/2021"
     },
     {
-      "institution": "Kendriya Vidyalaya No. 1 Roorkee",
-      "area": "Science",
-      "summary": "Completed Higher Secondary Education with Science stream",
-      "studyType": "Higher Secondary",
-      "startDate": "2015",
-      "endDate": "2017",
-      "duration": "2 years"
-    },
-    {
-      "institution": "London App Brewery",
-      "area": "Flutter Development Training",
-      "summary": "After completing my third year of college, I used my summer vacation to learn new technologies and applied my Knowledge in flutter development. I also explored new tools to enhance my ability to build college projects, such as a MarketPlace application.",
-      "studyType": "Training",
-      "startDate": "May/2020",
-      "endDate": "July/2020",
-      "duration": "2 months"
-    } 
+      "title": "Higher Secondary, Kendriya Vidyalaya No. 1 Roorkee",  
+      "description": "Completed Higher Secondary Education with Science stream",      
+      "duration": "2 years",
+      "dateRange": "Apirl/2014 - Sept/2016"
+    }
+    
   ]
 }

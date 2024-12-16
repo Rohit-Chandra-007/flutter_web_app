@@ -1,7 +1,7 @@
 part of 'portfolio_bloc.dart';
 
 @immutable
-sealed class PortfolioState  extends Equatable{}
+sealed class PortfolioState extends Equatable {}
 
 class PortfolioInitial extends PortfolioState {
   @override
@@ -15,8 +15,13 @@ class PortfolioLoading extends PortfolioState {
 
 class PortfolioLoaded extends PortfolioState {
   final List<Project> projects;
+  final List<Journey> workExperience;
+  final List<Journey> academicExperience;
 
-  PortfolioLoaded({required this.projects});
+  PortfolioLoaded(
+      {required this.projects,
+      required this.workExperience,
+      required this.academicExperience});
 
   @override
   List<Object?> get props => [projects];

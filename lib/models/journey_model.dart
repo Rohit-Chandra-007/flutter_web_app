@@ -1,18 +1,18 @@
-class WorkExperience {
+class Journey {
   final String title;
   final String description;
   final String duration;
   final String dateRange;
 
-  WorkExperience({
+  Journey({
     required this.title,
     required this.description,
     required this.duration,
     required this.dateRange,
   });
 
-  factory WorkExperience.fromJson(Map<String, dynamic> json) {
-    return WorkExperience(
+  factory Journey.fromJson(Map<String, dynamic> json) {
+    return Journey(
       title: json['title'] ?? '',
       description: json['description'] ?? '',
       duration: json['duration'] ?? '',
@@ -27,13 +27,13 @@ class WorkExperience {
         'dateRange': dateRange,
       };
 
-  WorkExperience copyWith({
+  Journey copyWith({
     String? title,
     String? description,
     String? duration,
     String? dateRange,
   }) {
-    return WorkExperience(
+    return Journey(
       title: title ?? this.title,
       description: description ?? this.description,
       duration: duration ?? this.duration,

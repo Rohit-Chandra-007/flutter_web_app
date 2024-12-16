@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_app/constant/app_images.dart';
 import 'package:flutter_web_app/models/project_model.dart';
 
 class ProjectCard extends StatelessWidget {
