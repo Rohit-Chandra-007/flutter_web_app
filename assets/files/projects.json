@@ -3,6 +3,7 @@
     {
       "name": "UPSC Preparation App",
       "description": "A mobile application to help UPSC aspirants prepare for the examination",
+      "image": "assets/images/upsc_blog_app.png",
       "highlights": [
         "Integrated with Firebase for user authentication and data storage",
         "Real-time chat feature for users to interact with each other",
@@ -23,6 +24,7 @@
     {
       "name": "Workopia-Job Listing Website",
       "description": "A job listing website for employers and job seekers to connect",
+      "image": "assets/images/workopia.png",
       "highlights": [
         "post job listings and apply for jobs",
         "User authentication and authorization",
@@ -41,6 +43,7 @@
     {
       "name": "Personal Portfolio Website",
       "description": "A personal portfolio website to showcase projects and skills",
+      "image": "assets/images/portfolio_design.png",
       "highlights": [
         "Responsive design for mobile and desktop",
         "Interactive elements and animations",
@@ -53,6 +56,7 @@
     {
       "name": "Chit Chat App",
       "description": "A real-time chat application for users to communicate with each other",
+      "image": "assets/images/chit_chat_app.png",
       "highlights": [
         "User registration and login",
         "Real-time messaging with online status",
@@ -65,6 +69,7 @@
     {
       "name": "Expense Tracker App",
       "description": "A mobile application to track and manage expenses",
+      "image": "assets/images/expanse_app.png",
       "highlights": [
         "Expense categorization and budget setting",
         "Monthly and yearly expense reports",
@@ -76,6 +81,7 @@
     {
       "name": "Your Location App",
       "description": "Mark Your Location and Share with Friends",
+      "image": "assets/images/your_location_app.png",
       "highlights": [
         "Mark your location on map",
         "Share your location with friends",

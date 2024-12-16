@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class Project {
   final String name;
   final String description;
+  final String image;
   final List<String> highlights;
   final List<String> technologies;
   final String url;
@@ -12,6 +13,7 @@ class Project {
   Project({
     required this.name,
     required this.description,
+    required this.image,
     required this.highlights,
     required this.technologies,
     required this.url,
@@ -21,6 +23,7 @@ class Project {
     return Project(
       name: json['name'] ?? '',
       description: json['description'] ?? '',
+      image: json['image'] ?? '',
       highlights: List<String>.from(json['highlights'] ?? []),
       technologies: List<String>.from(json['technologies'] ?? []),
       url: json['url'] ?? '',
@@ -30,6 +33,7 @@ class Project {
   Map<String, dynamic> toJson() => {
         'name': name,
         'description': description,
+        'image': image,
         'highlights': highlights,
         'technologies': technologies,
         'url': url,
@@ -38,6 +42,7 @@ class Project {
   Project copyWith({
     String? name,
     String? description,
+    String? image,
     List<String>? highlights,
     List<String>? technologies,
     String? url,
@@ -45,6 +50,7 @@ class Project {
     return Project(
       name: name ?? this.name,
       description: description ?? this.description,
+      image: image ?? this.image,
       highlights: highlights ?? this.highlights,
       technologies: technologies ?? this.technologies,
       url: url ?? this.url,
@@ -52,7 +58,8 @@ class Project {
   }
 
   // Helper method to get primary technology
-  String get primaryTechnology => technologies.isNotEmpty ? technologies.first : '';
+  String get primaryTechnology =>
+      technologies.isNotEmpty ? technologies.first : '';
 
   // Helper method to check if project uses a specific technology
   bool usesTechnology(String technology) {
@@ -82,10 +89,9 @@ class Project {
     return '${description.substring(0, 97)}...';
   }
 
- 
   // Add static loader method
   static Future<List<Project>> loadProjects(BuildContext context) async {
-    final String jsonString = 
+    final String jsonString =
         await DefaultAssetBundle.of(context).loadString('assets/projects.json');
     final List<dynamic> jsonList = json.decode(jsonString);
     return jsonList.map((json) => Project.fromJson(json)).toList();
