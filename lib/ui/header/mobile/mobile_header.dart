@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MobileHeader extends StatelessWidget {
   const MobileHeader({super.key});
@@ -18,21 +19,24 @@ class MobileHeader extends StatelessWidget {
           ),
           onPressed: () {
             // Add LinkedIn URL here
+
+            launchUrl(
+                Uri.parse('https://www.linkedin.com/in/rohit-chandra-jan13/'));
           },
         ),
         const SizedBox(width: 16),
         IconButton(
           icon: FaIcon(
-
             FontAwesomeIcons.github,
             size: 32,
             color: Theme.of(context).colorScheme.onSurface,
           ),
           onPressed: () {
             // Add GitHub URL here
+            launchUrl(Uri.parse("https://github.com/Rohit-Chandra-007"));
           },
         ),
-       const SizedBox(width: 16),
+        const SizedBox(width: 16),
         IconButton(
           icon: FaIcon(
             FontAwesomeIcons.instagram,
@@ -40,7 +44,8 @@ class MobileHeader extends StatelessWidget {
             color: Theme.of(context).colorScheme.onSurface,
           ),
           onPressed: () {
-            // Add Behance URL here
+            launchUrl(
+                Uri.parse('https://www.instagram.com/i_m_rohit_chanaliya/'));
           },
         ),
       ],

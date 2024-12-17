@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_web_app/common/functions.dart';
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
 import 'package:flutter_web_app/constant/app_colors.dart';
 import 'package:flutter_web_app/constant/app_icons.dart';
+import 'package:flutter_web_app/constant/app_keys.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class WebContactSection extends StatelessWidget {
@@ -77,10 +79,13 @@ class WebContactSection extends StatelessWidget {
               ),
             ],
           ),
-          GestureDetector(
-            onTap: () {},
+          TextButton(
+            onPressed: () {
+              scrollToSection(context, AppKeys.homeKey);
+            },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
                   'Back to top',
