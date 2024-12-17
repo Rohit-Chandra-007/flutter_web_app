@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_web_app/bloc/portfolio_bloc.dart';
 import 'package:flutter_web_app/common/responsive_widget.dart';
+import 'package:flutter_web_app/constant/app_keys.dart';
 
 import 'package:flutter_web_app/ui/about_me/about_me_section.dart';
 import 'package:flutter_web_app/ui/career/career_section.dart';
@@ -14,8 +15,6 @@ import 'package:flutter_web_app/ui/portfolio/portfolio_section.dart';
 import 'package:flutter_web_app/ui/recommendation/recommendation.dart';
 import 'package:flutter_web_app/ui/skills_experience/skills_experience.dart';
 
-import 'models/project_model.dart';
-
 class PortfolioScreen extends StatefulWidget {
   const PortfolioScreen({super.key});
 
@@ -24,7 +23,6 @@ class PortfolioScreen extends StatefulWidget {
 }
 
 class _PortfolioScreenState extends State<PortfolioScreen> {
-  List<Project> projects = [];
   @override
   initState() {
     super.initState();
@@ -47,11 +45,11 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
               const SizedBox(
                 height: 20,
               ),
-              const Header(),
+              Header(),
               const SizedBox(
                 height: 15,
               ),
-               const HomeSection(),
+              HomeSection(key: AppKeys.homeKey),
               if (!ResponsiveWidget.isMobile(context))
                 Container(
                   width: double.infinity,
@@ -65,13 +63,13 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
                   height: 2,
                   color: Theme.of(context).colorScheme.primaryContainer,
                 ),
-              const ProfileScreen(),
-              const PortfolioSection(),
-              const SkillsScreen(),
-              const CareerScreen(),
-              const RecommendationSection(),
-              const ContactSection(),
-              const FooterSection()
+              ProfileScreen(key: AppKeys.aboutMeKey),
+              PortfolioSection(key: AppKeys.portfolioKey),
+              SkillsScreen(key: AppKeys.skillsKey),
+              CareerScreen(key: AppKeys.careerKey),
+              RecommendationSection(key: AppKeys.recommendedKey),
+              ContactSection(key: AppKeys.contactKey),
+              FooterSection()
             ],
           ),
         ),
