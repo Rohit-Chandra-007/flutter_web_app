@@ -14,6 +14,7 @@ class NameSection extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Container(
+          
           width: ResponsiveWidget.isMobile(context)?125:null,
           padding:  const EdgeInsets.all(12),
           decoration: BoxDecoration(
