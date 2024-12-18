@@ -1,11 +1,11 @@
 {
-    "name": "flutter_web_app",
-    "short_name": "flutter_web_app",
+    "name": "Rohit Portfolio",
+    "short_name": "Rohit Portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Welcome to my Flutter journey! Exploring mobile and web development with Flutter, creating innovative solutions and beautiful user experiences.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

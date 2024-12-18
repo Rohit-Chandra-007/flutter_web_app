@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Rohit Portfolio',
       theme: AppTheme.appTheme(context),
       builder: (context, child) {
         return const PortfolioScreen();
