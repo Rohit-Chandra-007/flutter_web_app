@@ -1,73 +1,70 @@
-.splash-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #2193b0, #6dd5ed);
-    display: flex;
-    justify-content: center;
+html,
+body {
+    background-color: #090E16;
+
+    @media (-webkit-max-device-pixel-ratio: 1) {
+        * {
+            image-rendering: pixelated;
+        }
+    }
+}
+
+body {
+    inset: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #090E16;
+}
+
+#loading {
+    background-color: #090E16;
     align-items: center;
-    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    position: absolute;
+    z-index: 100 !important;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
-.splash-content {
-    text-align: center;
-    color: white;
+#loading .logo {
+    animation: 1s ease-in-out 0s infinite alternate breathe;
+    opacity: .66;
+    transition: opacity .4s;
+    width: 60px;
+    height: 60px;
+    color: #f39237aa;
+    /* border: 1px solid #f39237aa; */
 }
 
-.splash-logo {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
-    animation: pulse 2s infinite;
+#loading.main_done .logo {
+    opacity: 1;
 }
 
-.splash-title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: bold;
+#loading.init_done {
+    animation: .66s ease-in-out 0s 1 forwards zooooom;
+    /* opacity: .66; */
 }
 
-@keyframes fadeIn {
+@keyframes breathe {
     from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(0.9)
+    }
+}
+
+@keyframes zooooom {
+    from {
+        transform: scale(1);
+        opacity: .66;
+    }
+
+    to {
+        transform: scale(10);
         opacity: 0;
     }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1a1a1a;
-}
-
-.loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid #FFF;
-    border-bottom-color: #0175C2;
-    border-radius: 50%;
-    animation: rotation 1s linear infinite;
-}
-
-@keyframes rotation {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
