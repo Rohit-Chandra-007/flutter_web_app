@@ -4,6 +4,7 @@ import 'package:flutter_web_app/bloc/portfolio_bloc.dart';
 
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
 import 'package:flutter_web_app/ui/portfolio/common_widget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MobilePortfolioSection extends StatelessWidget {
   const MobilePortfolioSection({super.key});
@@ -38,7 +39,7 @@ class MobilePortfolioSection extends StatelessWidget {
                         decelerationRate: ScrollDecelerationRate.fast,
                       ),
                       scrollDirection: Axis.horizontal,
-                      itemCount: 6,
+                      itemCount: state.projects.length,
                       itemBuilder: (context, index) {
                         return Container(
                             margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -57,7 +58,9 @@ class MobilePortfolioSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  launchUrl(Uri.parse("https://github.com/Rohit-Chandra-007"));
+                },
                 child: Text(
                   'View More my Github Project →',
                   style: Theme.of(context).textTheme.titleMedium,

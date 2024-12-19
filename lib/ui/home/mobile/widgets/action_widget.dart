@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_app/common/functions.dart';
 
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -14,6 +15,7 @@ class MobileActionSection extends StatelessWidget {
         TextButton(
           onPressed: () {
             // Add download CV functionality here
+            downloadFile();
           },
           child: Text(
             'Download CV',
@@ -24,6 +26,7 @@ class MobileActionSection extends StatelessWidget {
         OutlinedButton.icon(
           onPressed: () {
             // Add WhatsApp contact functionality here
+            launchWhatsapp();
           },
           icon: FaIcon(
             FontAwesomeIcons.whatsapp,

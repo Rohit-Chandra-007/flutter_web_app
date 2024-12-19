@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_app/common/functions.dart';
 
 import 'package:flutter_web_app/common/responsive_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -6,20 +7,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 class ActionSection extends StatelessWidget {
   const ActionSection({super.key});
-
-  void launchWhatsapp() async {
-    // Add WhatsApp contact functionality here
-    final phoneNumber = '919760320892'; // Remove the '+' prefix
-
-    final Uri whatsappUrl =
-        Uri.parse('https://api.whatsapp.com/send?phone=$phoneNumber');
-    if (await canLaunchUrl(whatsappUrl)) {
-      await launchUrl(whatsappUrl,
-          mode: LaunchMode.platformDefault, webOnlyWindowName: '_blank');
-    } else {
-      throw 'Could not launch WhatsApp';
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +52,7 @@ class ActionSection extends StatelessWidget {
               TextButton(
                 onPressed: () {
                   // Add download CV functionality here
+                  downloadFile();
                 },
                 child: Text(
                   'Download CV \u2B07',

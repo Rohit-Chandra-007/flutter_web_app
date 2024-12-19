@@ -31,39 +31,39 @@ class TabRecommendationSection extends StatelessWidget {
                 'In testimony',
                 style: Theme.of(context).textTheme.displayMedium,
               ),
-              Row(
-                children: [
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1),
-                    ),
-                    child: Center(
-                      child: SvgPicture.asset(AppIcons.backwardArrow),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1),
-                    ),
-                    child: Center(
-                      child: SvgPicture.asset(AppIcons.forwardArrow),
-                    ),
-                  ),
-                ],
-              ),
+              // Row(
+              //   children: [
+              //     Container(
+              //       width: 60,
+              //       height: 60,
+              //       decoration: BoxDecoration(
+              //         borderRadius: BorderRadius.circular(12),
+              //         border: Border.all(
+              //             color: Theme.of(context).colorScheme.onPrimary,
+              //             width: 1),
+              //       ),
+              //       child: Center(
+              //         child: SvgPicture.asset(AppIcons.backwardArrow),
+              //       ),
+              //     ),
+              //     const SizedBox(
+              //       width: 8,
+              //     ),
+              //     Container(
+              //       width: 60,
+              //       height: 60,
+              //       decoration: BoxDecoration(
+              //         borderRadius: BorderRadius.circular(12),
+              //         border: Border.all(
+              //             color: Theme.of(context).colorScheme.onPrimary,
+              //             width: 1),
+              //       ),
+              //       child: Center(
+              //         child: SvgPicture.asset(AppIcons.forwardArrow),
+              //       ),
+              //     ),
+              //   ],
+              // ),
             ],
           ),
           const SizedBox(height: 32),

@@ -1,0 +1,44 @@
+{
+  "professionalExperiences": [
+    {
+      "title": "Mobile and Website Developer at MomentumIas",
+      "description": "Professionally managing MomentumIAS's website, a premier coaching institute for UPSC preparation. Providing comprehensive technical support and maintenance to ensure seamless operations and enhanced user experience across all platforms.",
+      "duration": "3 months",
+      "dateRange": "Sept/2024 - Present"
+    },
+    {
+      "title": "Jr. Flutter Developer at Hostbooks",
+      "description": "Led frontend development for HostBooks business management application, implementing responsive solutions for desktop and mobile platforms. Utilized GetX state management and MVC architecture to deliver high-performance, scalable applications. Collaborated with cross-functional teams to ensure optimal user experience and maintainable codebase.",
+      "duration": "4 month",
+      "dateRange": "Sept/2022 - Jan/2023"
+    },
+    {
+      "title": "Flutter Intern at Oyelabs",
+      "description": "Contributed to Oyelabs grocery application project, which featured an aesthetically appealing user interface designed in Figma. My role involved implementing RESTful APIs, integrated Firebase for backend functionality, and incorporated Google Maps for location-based services.",
+      "duration": "5 months",
+      "dateRange": "Apirl/2022 - Sept/2022"
+    }
+    
+  ],
+  "academicExperiences": [
+    {
+      "title": "Training, London App Brewery",
+      "description": "After completing my third year of college, I used my summer vacation to learn new technologies and applied my Knowledge in flutter development. I also explored new tools to enhance my ability to build college projects, such as a MarketPlace application.",   
+      "duration": "2 months",
+      "dateRange":"May/2020 - July/2020"
+    } ,
+    {
+      "title": "Bachelor's, Computer Science and Engineering",
+      "description": "Graduated with a Bachelor's degree in Computer Science and Engineering from National Institute of Technology Uttarakhand",
+      "duration": "4 years",
+      "dateRange": "Aug/2017 - May/2021"
+    },
+    {
+      "title": "Higher Secondary, Kendriya Vidyalaya No. 1 Roorkee",  
+      "description": "Completed Higher Secondary Education with Science stream",      
+      "duration": "2 years",
+      "dateRange": "Apirl/2014 - Sept/2016"
+    }
+    
+  ]
+}

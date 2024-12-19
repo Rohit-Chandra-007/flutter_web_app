@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_web_app/bloc/portfolio_bloc.dart';
 import 'package:flutter_web_app/common/widgets/label_chip.dart';
 import 'package:flutter_web_app/ui/portfolio/common_widget.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 
 class WebPortfolioSection extends StatelessWidget {
   const WebPortfolioSection({super.key});
@@ -53,7 +53,9 @@ class WebPortfolioSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  launchUrl(Uri.parse("https://github.com/Rohit-Chandra-007"));
+                },
                 child: Text(
                   'View More my Github Project →',
                   style: Theme.of(context).textTheme.titleMedium,
@@ -66,7 +68,3 @@ class WebPortfolioSection extends StatelessWidget {
     );
   }
 }
-
-
-
-

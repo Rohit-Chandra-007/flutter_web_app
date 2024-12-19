@@ -35,6 +35,7 @@ class MobileContactSection extends StatelessWidget {
               OutlinedButton.icon(
                 onPressed: () {
                   // Add WhatsApp contact functionality here
+                  launchWhatsapp();
                 },
                 icon: FaIcon(
                   FontAwesomeIcons.whatsapp,
