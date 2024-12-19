@@ -1,4 +1,5 @@
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -36,13 +37,15 @@ void launchWhatsapp() async {
       final storageRef =
           FirebaseStorage.instance.ref().child('documents/RohitResume.pdf');
       String downloadUrl = await storageRef.getDownloadURL();
-      print(downloadUrl);
+      
       // Get the directory to save the file
       launchUrl(Uri.parse(downloadUrl));
 
       // Start downloading the file
     } on FirebaseException catch (e) {
       // Handle any errors
-      print("Error downloading file: ${e.message}");
+      if (kDebugMode) {
+        print("Error downloading file: ${e.message}");
+      }
     }
   }
